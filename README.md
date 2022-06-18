@@ -2,9 +2,8 @@
 
 Objetivos com esse projeto é criar um sistema de ERP para a empresa no ramo alimentício
 
+<hr>
 A empresa contempla algumas entidades vamos a elas:
-
-
 
 **Clientes**
 
@@ -18,8 +17,6 @@ A empresa contempla algumas entidades vamos a elas:
   - Estado
   - CEP
 - Forma de Pagamento Preferida
-
-
 
 **Funcionários**
 
@@ -39,8 +36,6 @@ A empresa contempla algumas entidades vamos a elas:
   - CEP
 - Salário
 - Gorjetas
-
-
 
 **Pratos**
 
@@ -63,5 +58,30 @@ A empresa contempla algumas entidades vamos a elas:
   - Carro 
   - Moto
 - Preço
-  - Valor do Produto * Quantidade
+  - Total = (Valor do Produto * Quantidade)
   - Taxa de Entrega
+  - Somatório 
+
+
+<hr>
+
+Objetivo Geral será Criar uma plataforma onde poderão ser cadastrados os produtos também como sua compra.
+
+O processo de Compra começa com o CLIENTE(Já Cadastrado) vai para um Menu com os produtos cadastrados, uma vez que selecionado o produto e sua quantidade, o cliente pode ir para a página de pagamento.
+
+O Pagamento Trabalha com o método de Pagamento na entrega e uma taxa fixa para entrega de R$15 o cliente também pode pagar via cartão e também pode adicionar uma gorjeta para o entregador.
+
+Após a Compra em um painel haverá uma mensagem indicando que houve um pagamento, desse ponto o atendente pode passar o pedido para cozinha, quando o prato estiver pronto o Entregador receberá a comida e o painel do cliente receberá uma indicação de que a comida ja foi pronta e segue para a entrega.
+
+O Cliente pode Cancelar a Compra, ou reportar algum problema com seu pedido
+
+Objetivo desse projeto é trabalhar com as seguintes Tecnologias
+<br><br>
+Java Security <br>
+Spring Boot <br>
+ThymeLeaf<br>
+Bootstrap<br>
+
+
+
+<hr>
