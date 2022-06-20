@@ -5,11 +5,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-@Entity
 public class Venda {
 	
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Integer comanda;
 	
 	private double taxaEntrega = 15;	

@@ -6,12 +6,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import br.com.bytefood.orm.UserRoles;
 
-@SpringBootApplication
+@SpringBootApplication()
 public class BytefoodSystemApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BytefoodSystemApplication.class, args);
-		UserRoles.gerarRoles();
 		
 	}
 
