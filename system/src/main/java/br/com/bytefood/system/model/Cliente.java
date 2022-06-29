@@ -7,12 +7,22 @@ import javax.persistence.*;
 public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     private String nome;
     private String endereco;
     private String cpf;
     private String telefone;
 
+    public Cliente(Long id, String nome, String endereco, String cpf, String telefone) {
+        this.id = id;
+        this.nome = nome;
+        this.endereco = endereco;
+        this.cpf = cpf;
+        this.telefone = telefone;
+    }
+
+    public Cliente() {
+    }
 
     public String getNome() {
         return nome;
@@ -30,7 +40,7 @@ public class Cliente {
         return telefone;
     }
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 

@@ -2,7 +2,6 @@ package br.com.bytefood.system.controller;
 
 import br.com.bytefood.system.model.Cliente;
 import br.com.bytefood.system.repository.ClienteRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -36,7 +35,10 @@ public class ClienteController {
     }
 
     @PostMapping("/cadastrar/cliente")
-    public String cadastrarCliente(Cliente cliente){
+    public String cadastrarCliente(Cliente cliente, BindingResult result){
+        if(result.hasErrors()) {
+            return "cadastroClienteForm";
+        }
         clienteRepository.save(cliente);
         return  "redirect:/clientes";
     }
