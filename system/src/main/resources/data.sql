@@ -1,1 +1,10 @@
-INSERT INTO clientes(nome,endereco,cpf,telefone) VALUES ('Joao','Rua Epaminondas','12365498778','8888-8888');
+INSERT INTO clientes(nome,endereco,cpf,telefone) VALUES ('André Souza','Rua Epaminondas de Mendonça','78965412365','+55 955 867 9030');
+INSERT INTO clientes(nome,endereco,cpf,telefone) VALUES ('Ana Carolina','Rua Professor Lobo de Miranda','63398421867','+55 955 196 9475');
+INSERT INTO clientes(nome,endereco,cpf,telefone) VALUES ('Joao Victor','Rua Coral','88024497022','+55 955 736 6795');
+INSERT INTO clientes(nome,endereco,cpf,telefone) VALUES ('Joao Gabriel','Rua Afogados do Manto','24409284310','+55 955 218 1281');
+INSERT INTO clientes(nome,endereco,cpf,telefone) VALUES ('Carlos Jr','Rua Lucas & Carlos','85163531316','+55 955 324 3113');
+INSERT INTO clientes(nome,endereco,cpf,telefone) VALUES ('Cleyton Batista','Rua da Trindade Pirata','33152711979','+55 955 580 3784');
+INSERT INTO clientes(nome,endereco,cpf,telefone) VALUES ('Maria Souza','Rua Marques de Oliveira','23376033308','+55 955 280 7366');
+INSERT INTO clientes(nome,endereco,cpf,telefone) VALUES ('Mayara Lima','Rua Governador Agamenon','31912679161','+55 955 801 7907');
+INSERT INTO clientes(nome,endereco,cpf,telefone) VALUES ('Robson Lucas','Rua Nova Onda do Emperador','51627764987','+55 955 881 5254');
+INSERT INTO clientes(nome,endereco,cpf,telefone) VALUES ('Emanuelle Saffira','Rua Pueblo','54973534044','+55 955 262 2680');
