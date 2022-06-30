@@ -3,7 +3,6 @@ package br.com.bytefood.system.model;
 import javax.persistence.*;
 
 @Entity
-@set
 @Table(name = "clientes")
 public class Cliente {
     @Id
@@ -45,4 +44,20 @@ public class Cliente {
         return id;
     }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
 }
+
