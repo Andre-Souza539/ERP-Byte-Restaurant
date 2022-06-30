@@ -3,6 +3,7 @@ package br.com.bytefood.system.model;
 import javax.persistence.*;
 
 @Entity
+@set
 @Table(name = "clientes")
 public class Cliente {
     @Id
