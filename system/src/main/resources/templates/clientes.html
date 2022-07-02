@@ -7,13 +7,16 @@
     <title>Listagem de Clientes</title>
 </head>
 <body>
-    <table border="1" style="width: 725px;">
+    <table border="1" style="width: 1280px;">
         <tr>
             <th>ID</th>
             <th>Nome</th>
             <th>Cpf</th>
-            <th>Endereço</th>
             <th>Telefone</th>
+            <th>Cep</th>
+            <th>Bairro</th>
+            <th>Rua</th>
+            <th>Nº</th>
             <th>Opções</th>
         </tr>
         <th:block th:each="clientes : ${clientes}">
@@ -21,12 +24,17 @@
                 <td th:text="${clientes.id}">...</td>
                 <td th:text="${clientes.nome}">...</td>
                 <td th:text="${clientes.cpf}">...</td>
-                <td th:text="${clientes.endereco}">...</td>
                 <td th:text="${clientes.telefone}">...</td>
-                <td><a th:href="@{/atualizar/cliente/} + ${clientes.id}">Atualizar</a> | <a th:href="@{/deletar/cliente/} + ${clientes.id}">Deletar</a></td>
+                <td th:text="${clientes.cep}">...</td>
+                <td th:text="${clientes.bairro}">...</td>
+                <td th:text="${clientes.rua}">...</td>
+                <td th:text="${clientes.num}">...</td>
+                <td><a th:href="@{/atualizar/cliente/} + ${clientes.id}">Atualizar</a>
+                    | <a th:href="@{/deletar/cliente/} + ${clientes.id}">Deletar</a></td>
             </tr>
         </th:block>
     </table>
-    <a href="/cliente/cadastro">Adicionar</a>
+    <br>
+    <a href="/cadastro/cliente">Adicionar</a>
 </body>
 </html>

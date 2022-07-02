@@ -14,18 +14,19 @@
 <div class="mx-auto" style="width: 50%;">
 
     <h1> Cadastro de Clientes</h1>
-    <form action="#" th:action="@{/cadastrar/cliente}" th:object="${cliente}" method="post">
+    <form action="/cadastrar/cliente"  method="post">
 
         <label>Nome</label><br>
-        <input class="form-control" type="text" th:field="*{nome}">
-<!--        <span th:if="${#fields.hasErrors('nome')}" th:errors="*{nome}"></span><br>-->
+        <input class="form-control" name="nome">
+
         <label>Endereco</label><br>
-        <input class="form-control" type="text" th:field="*{endereco}">
-<!--        <span th:if="${#fields.hasErrors('endereco')}" th:errors="*{endereco}"></span><br>-->
+        <input class="form-control" name="cep">
+        <input class="form-control" name="rua">
+        <input class="form-control" name="num">
+        <input class="form-control" name="bairro">
 
         <label>Cpf</label><br>
-        <input class="form-control" type="text" th:field="*{cpf}">
-<!--        <span th:if="${#fields.hasErrors('cpf')}" th:errors="*{cpf}"></span><br>-->
+        <input class="form-control" name="cpf">
 
         <input class="btn btn-primary" type="submit" value="Enviar">
 
