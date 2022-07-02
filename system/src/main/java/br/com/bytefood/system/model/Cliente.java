@@ -3,6 +3,7 @@ package br.com.bytefood.system.model;
 import org.springframework.scheduling.support.SimpleTriggerContext;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "clientes")
@@ -10,13 +11,20 @@ public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @NotNull
     private String nome;
+    @NotNull
     private String cpf;
+    @NotNull
     private String telefone;
+    @NotNull
 
     private String cep;
+    @NotNull
     private String rua;
+    @NotNull
     private String bairro;
+    @NotNull
     private int num;
 
     /*

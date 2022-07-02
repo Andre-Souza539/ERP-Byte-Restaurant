@@ -7,8 +7,11 @@ import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 
 
+import javax.validation.Valid;
+import java.text.Bidi;
 import java.util.List;
 import java.util.Optional;
 
@@ -39,5 +42,33 @@ public class ClienteController {
         model.addAttribute("cliente", new Cliente());
         return "cadastroClienteForm";
     }
+
+    @PostMapping("/cadastrar/cliente")
+    public String salvarCliente(@Valid Cliente cliente, BindingResult result){
+        if(result.hasErrors()){
+            return "cadastroClienteForm";
+        } else {
+            clienteRepository.save(cliente);
+            return "redirect:/clientes";
+        }
+    }
+
+    @GetMapping("/atualizar/cliente/{id}")
+    public String atualizaClienteForm(@PathVariable Long id, Model model){
+        model.addAttribute("cliente", clienteRepository.findById(id));
+        return "atualizaClienteForm";
+    }
+
+    @PostMapping("/atualiza/cliente")
+    public String atualizaCliente(@Valid Cliente cliente, BindingResult result){
+        if(result.hasErrors()){
+            return "atualizaClienteForm";
+        } else {
+            clienteRepository.save(cliente);
+            return "redirect:/clientes";
+        }
+    }
+
+
 
 }

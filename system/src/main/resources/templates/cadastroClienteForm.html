@@ -14,20 +14,31 @@
 <div class="mx-auto" style="width: 50%;">
 
     <h1> Cadastro de Clientes</h1>
-    <form action="/cadastrar/cliente"  method="post">
+    <form action="/cadastrar/cliente" method="post" th:object="${cliente}">
 
         <label>Nome</label><br>
-        <input class="form-control" name="nome">
-
-        <label>Endereco</label><br>
-        <input class="form-control" name="cep">
-        <input class="form-control" name="rua">
-        <input class="form-control" name="num">
-        <input class="form-control" name="bairro">
+        <span th:if="${#fields.hasErrors('nome')}" th:errors="*{nome}"></span>
+        <input class="form-control" name="nome"><br>
 
         <label>Cpf</label><br>
-        <input class="form-control" name="cpf">
+        <span th:if="${#fields.hasErrors('cpf')}" th:errors="*{cpf}"></span>
+        <input class="form-control" name="cpf"><br>
+        <label>Telefone</label><br>
+        <span th:if="${#fields.hasErrors('telefone')}" th:errors="*{telefone}"></span>
+        <input class="form-control" name="telefone"><br>
 
+        <label>Cep</label><br>
+        <span th:if="${#fields.hasErrors('cep')}" th:errors="*{cep}"></span>
+        <input class="form-control" name="cep" placeholder="CEP "><br>
+        <label>Bairro</label><br>
+        <span th:if="${#fields.hasErrors('bairro')}" th:errors="*{bairro}"></span>
+        <input class="form-control" name="bairro" placeholder="Bairro"><br>
+        <label>Rua</label><br>
+        <span th:if="${#fields.hasErrors('rua')}" th:errors="*{rua}"></span>
+        <input class="form-control" name="rua" placeholder="Rua"><br>
+        <label>Numero</label><br>
+        <span th:if="${#fields.hasErrors('num')}" th:errors="*{num}"></span>
+        <input class="form-control" name="num" placeholder="Numero"><br>
         <input class="btn btn-primary" type="submit" value="Enviar">
 
     </form>
