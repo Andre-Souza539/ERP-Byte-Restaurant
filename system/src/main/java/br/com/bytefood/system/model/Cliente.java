@@ -1,6 +1,5 @@
 package br.com.bytefood.system.model;
 
-import org.springframework.scheduling.support.SimpleTriggerContext;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;

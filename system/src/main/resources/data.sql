@@ -8,3 +8,4 @@ INSERT INTO clientes(nome,cpf, telefone, cep, rua, bairro, num) VALUES ('Kelan W
 INSERT INTO clientes(nome,cpf, telefone, cep, rua, bairro, num) VALUES ('Marcie Garrison','73356283340','+55 843 649 0119','50970-090','Rua Soldado Péricles Leal','Várzea',141);
 INSERT INTO clientes(nome,cpf, telefone, cep, rua, bairro, num) VALUES ('Safia Hampton','97845269131','+55 544 955 2675','52030-110','Rua Bequimão','Encruzilhada',666);
 INSERT INTO clientes(nome,cpf, telefone, cep, rua, bairro, num) VALUES ('Christopher Garza','46291358980','+55 955 867 9030','54410-110','Rua Epaminondas de Mendonça','Dois Unidos',340);
+INSERT INTO funcionarios(nome,cpf,telefone,cep,bairro,rua,num,cargo,salario,transporte,alimentacao) VALUES('André Marques', '78965412312','+55 999 78888 2222','54410-110','Piedade','Rua Nadir de Medeiros', 351,'Gerente',3500,400,500);
