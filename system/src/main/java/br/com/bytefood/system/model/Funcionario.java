@@ -26,9 +26,11 @@ public class Funcionario {
     private double transporte;
     private double alimentacao;
 
-    public long getId() { return this.id; }
+    public Long getId() {
+        return id;
+    }
 
-    public void setId(long id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -48,12 +50,28 @@ public class Funcionario {
         this.cpf = cpf;
     }
 
+    public String getTelefone() {
+        return telefone;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
     public String getCep() {
         return cep;
     }
 
     public void setCep(String cep) {
         this.cep = cep;
+    }
+
+    public String getBairro() {
+        return bairro;
+    }
+
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
     }
 
     public String getRua() {
@@ -64,12 +82,20 @@ public class Funcionario {
         this.rua = rua;
     }
 
-    public int getNumero() {
+    public int getNum() {
         return num;
     }
 
-    public void setNumero(int num) {
+    public void setNum(int num) {
         this.num = num;
+    }
+
+    public String getCargo() {
+        return cargo;
+    }
+
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
     }
 
     public double getSalario() {
@@ -95,30 +121,5 @@ public class Funcionario {
     public void setAlimentacao(double alimentacao) {
         this.alimentacao = alimentacao;
     }
-
-    public String getTelefone() {
-        return telefone;
-    }
-
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
-    }
-
-    public String getBairro() {
-        return bairro;
-    }
-
-    public void setBairro(String bairro) {
-        this.bairro = bairro;
-    }
-
-    public String getCargo() {
-        return cargo;
-    }
-
-    public void setCargo(String cargo) {
-        this.cargo = cargo;
-    }
-
 }
 
